@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="clubing.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    
+</head> 
+<body>
+<form id="register">
+  <div class="bg-img">
+  <div class="container" >
+ 
+ <div> 
+  Name:<br>
+  <input name="name" type="text" id="name" class="" placeholder="Name">  
+  <div id="result2"> </div> 
+</div>    
+<div>
+  Adhar Number:
+  <input name="adharnumber" onkeyup="return isNumberKey()" onkeypress="return isNumberKey(event)" type="text" id="adharnumber" class="adharnumber" placeholder="Adhar Number" maxlength="12">  
+  <div id="result1"> </div> 
+</div>    
+<div>
+  Phone Number:
+  <input name="phonenumber"onkeypress="return isNumberKey(event)" type="text" id="phonenumber" class="phonenumber" placeholder="Phone Number" maxlength="10">  
+  <div id="result">  </div> 
+</div>    
+<div>
+  Pan Number:
+  <input name="pannumber" type="text" id="pannumber" class="pannumber" placeholder="Pan Number" maxlength="10">  
+  <div id="divPanCard"></div>
+</div>    
+
+<div>
+  Email Addres:
+  <input name="email" type="text" id="email" class="email" placeholder="Email Addres">    
+  <div id="emailname"></div>
+</div>    
+<div>
+  Home Address:
+  <input name="home" type="text" id="home" class="home" placeholder="Home Address">  
+  
+</div>
+
+<hr>    
+<input type="submit"  id="validate" class="validate" value="Submit!.." ><hr>
+<input type="reset" id="validate" value="Reset">
+</div>
+
+</form>    
+
+</div>
+
+<script src="clubing.js"></script>
+</body>
+
+
+</html>
